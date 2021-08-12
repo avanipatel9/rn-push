@@ -30,6 +30,7 @@ export default function App() {
     }).then(response => {
       const token = response.data;
       setPushToken(token);
+      fetch('https://your-own-api.com/');
     }).catch(err => {
       console.log(err);
       return null;
